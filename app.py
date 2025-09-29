@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import time
 
 API_URL = "http://127.0.0.1:8000" 
 
@@ -67,6 +68,7 @@ with tab2:
           res = requests.post(f"{API_URL}/create", json=payload)
           if res.status_code == 200:
               st.success("✅ Patient created successfully")
+              time.sleep(3)
               st.rerun() 
           else:
               st.error(res.json().get("detail", "Error adding patient"))
@@ -98,6 +100,7 @@ with tab3:
             res = requests.put(f"{API_URL}/edit/{pid}", json=payload)
             if res.status_code == 200:
                 st.success("✅ Patient updated successfully")
+                time.sleep(3)
                 st.rerun()
 
             else:
@@ -112,6 +115,7 @@ with tab4:
         res = requests.delete(f"{API_URL}/delete/{pid}")
         if res.status_code == 200:
             st.success("🗑️ Patient deleted")
+            time.sleep(3)
             st.rerun()
 
         else:
