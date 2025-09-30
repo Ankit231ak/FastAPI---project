@@ -6,7 +6,8 @@ The system automatically calculates the **Body Mass Index (BMI)** and provides a
 
 ## 🎬 Demo
 
-<video src="Patient Management.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="https://github.com/user-attachments/assets/85b0e632-5881-4ff2-b4fe-0fc9b9c53833" controls="controls" style="max-width: 100%;"></video>
+
 
 ---
 
